@@ -2,6 +2,8 @@ import commonStyling from './common';
 
 export default {
   ...commonStyling,
-  color: '#ffffff',
-  backgroundColor: '#000000',
+  colors: {
+    text: '#f3f4f6',
+    background: '#181818',
+  },
 };

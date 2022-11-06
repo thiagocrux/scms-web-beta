@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
-
   * {
     padding: 0;
     margin: 0;
@@ -11,12 +9,16 @@ export default createGlobalStyle`
 
   html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: ${({ theme }) => theme.fontFamily.body}, sans-serif;
   }
 
   body {
-    font-size: 1.6rem;
-    color: ${(props) => props.theme.color};
-    background-color: ${(props) => props.theme.backgroundColor};
+    font-size: ${({ theme }) => theme.fontSize.md};
+    color: ${({ theme }) => theme.colors.text};
+    background-color: ${({ theme }) => theme.colors.background};
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${({ theme }) => theme.fontFamily.title}, sans-serif;
   }
 `;

@@ -3,7 +3,7 @@ import * as Styled from './styles';
 function Footer() {
   return (
     <Styled.Footer>
-      <h4>Here goes your header</h4>
+      <h4>Here goes your footer</h4>
     </Styled.Footer>
   );
 }

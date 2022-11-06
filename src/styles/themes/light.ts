@@ -1,7 +1,9 @@
-import commonStyling from './common';
+import defaultStyles from './common';
 
 export default {
-  ...commonStyling,
-  color: '#000000',
-  backgroundColor: '#ffffff',
+  ...defaultStyles,
+  colors: {
+    text: '#1f2937',
+    background: '#fcfcfc',
+  },
 };
